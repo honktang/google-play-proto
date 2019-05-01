@@ -951,7 +951,7 @@ message Dependency {
 message InstallDetails {
     optional int32 installLocation = 1;
     optional int64 size = 2;
-    optional Dependency dependency = 3;
+    repeated Dependency dependency = 3;
     optional int32 targetSdkVersion = 4;
 }
 
